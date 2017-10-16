@@ -31,7 +31,7 @@ tf.app.flags.DEFINE_float('learning_rate', 0.01, 'learning rate.')
 
 # set this to 'main.py' relative path
 tf.app.flags.DEFINE_string('checkpoints_dir', os.path.abspath('./checkpoints/poems/'), 'checkpoints save path.')
-tf.app.flags.DEFINE_string('file_path', os.path.abspath('../dataset/data/poems.txt'), 'file name of poems.')
+tf.app.flags.DEFINE_string('file_path', os.path.abspath('./dataset/data/poems.txt'), 'file name of poems.')
 
 
 tf.app.flags.DEFINE_string('model_prefix', 'poems', 'model save prefix.')

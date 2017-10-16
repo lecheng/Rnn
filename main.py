@@ -17,6 +17,8 @@
 # limitations under the License.
 # ------------------------------------------------------------------------
 import argparse
+import sys
+sys.path.append('..')
 
 
 def parse_args():
@@ -37,13 +39,13 @@ def parse_args():
 if __name__ == '__main__':
     args = parse_args()
     if args.write == 'poem':
-        from inference import tang_poems
+        from train import tang_poems
         if args.train:
             tang_poems.main(True)
         else:
             tang_poems.main(False)
     elif args.write == 'lyric':
-        from inference import song_lyrics
+        from train import song_lyrics
         print(args.train)
         if args.train:
             song_lyrics.main(True)

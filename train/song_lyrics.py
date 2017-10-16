@@ -31,7 +31,7 @@ sys.path.append('..')
 tf.app.flags.DEFINE_integer('batch_size', 20, 'batch size.')
 tf.app.flags.DEFINE_float('learning_rate', 0.01, 'learning rate.')
 
-tf.app.flags.DEFINE_string('file_path', os.path.abspath('../dataset/data/周杰伦歌词大全.txt'), 'file path of lyrics.')
+tf.app.flags.DEFINE_string('file_path', os.path.abspath('./dataset/data/周杰伦歌词大全.txt'), 'file path of lyrics.')
 tf.app.flags.DEFINE_string('checkpoints_dir', os.path.abspath('./checkpoints/lyrics'), 'checkpoints save path.')
 tf.app.flags.DEFINE_string('model_prefix', 'lyrics', 'model save prefix.')
 
